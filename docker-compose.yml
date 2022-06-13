@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  db:
+    image: mysql:8.0.21
+    platform: linux/x86_64
+    container_name: Coffee-Shop-DB
+    ports:
+      - 3002:3306
+    environment:
+      - MYSQL_ROOT_USER=root
+      - MYSQL_ROOT_PASSWORD=01232100
+    restart: always
